@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -19,21 +23,56 @@
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section class="hero animate__animated animate__backInUp">
         <h1>Lorem, ipsum.</h1>
         <button type="button">hero-btn</button>
       </section>
       <section class="product">
         <ul>
-          <li><img src="./img/cat1.jpg" alt="cat"></li>
-          <li><img src="./img/cat2.jpg" alt="cat"></li>
-          <li><img src="./img/cat3.jpg" alt="cat"></li>
+          <li><img src="./img/cat1.jpg" alt="cat" /></li>
+          <li><img src="./img/cat2.jpg" alt="cat" /></li>
+          <li><img src="./img/cat3.jpg" alt="cat" /></li>
         </ul>
       </section>
+
+      <div
+        class="box wow animate__animated animate__backInLeft"
+        data-wow-duration="12s"
+        data-wow-delay="5s"
+      >
+        <img src="./img/cat1.jpg" alt="" width="500" />
+      </div>
+
+      <div
+        class="box wow animate__animated animate__backInRight"
+        data-wow-duration="4s"
+      >
+        <img src="./img/cat2.jpg" alt="" width="500" />
+      </div>
+
+      <div class="box wow animate__animated animate__backInLeft">
+        <img src="./img/cat3.jpg" alt="" width="500" />
+      </div>
+
+      <div
+        class="wow animate__animated animate__rotateInUpRight"
+        data-wow-delay="3s"
+      >
+        <img src="./img/cat2.jpg" alt="" width="500" />
+      </div>
+
+      <div class="box wow animate__animated animate__backInRight">
+        <img src="./img/dog1.webp" alt="" width="500" />
+      </div>
     </main>
     <footer>
       <a href="#">link</a>
       <button type="button">button</button>
     </footer>
+
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
